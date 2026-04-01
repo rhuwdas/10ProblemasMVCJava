@@ -14,12 +14,10 @@ public class FrmResEst extends javax.swing.JFrame {
 
     private CtrlEstAgg ctrlEst;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmResEst.class.getName());
-    /**
-     * Creates new form FrmResEst
-     */
+    
     public FrmResEst() {
         initComponents();
-
+        
         ctrlEst = new CtrlEstAgg(this);
     }
     public void vaciasCajas(){
@@ -96,6 +94,7 @@ public class FrmResEst extends javax.swing.JFrame {
 
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
         ctrlEst.IngresarDatos(this.txtNControl.getText(),this.txtNombre.getText(),this.txtCarrera.getText(),((byte)Integer.parseInt(this.Txtpromedio.getText())));
+        vaciar();
     }//GEN-LAST:event_lblGuardarMouseClicked
 
     private void txtNControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNControlActionPerformed
@@ -126,4 +125,12 @@ public class FrmResEst extends javax.swing.JFrame {
     private javax.swing.JTextField txtNControl;
     private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
+
+    private void vaciar() {
+        this.Txtpromedio.setText("");
+        this.txtCarrera.setText("");
+        this.txtNControl.setText("");
+        this.txtNombre.setText("");
+        this.Txtpromedio.setText("");
+    }
 }
