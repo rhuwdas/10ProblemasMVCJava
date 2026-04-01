@@ -1,6 +1,4 @@
-
 package com.mycompany.registroes.Vista;
-
 
 import com.mycompany.registroes.Controlador.CtrlEstListado;
 import javax.swing.table.DefaultTableModel;
@@ -11,17 +9,16 @@ public class FrmListEst extends javax.swing.JFrame {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmListEst.class.getName());
 
- 
     public FrmListEst() {
         initComponents();
         this.contrlEs = new CtrlEstListado(this);
         contrlEs.listarEst(columnas.length);
     }
+
     public void modelTbl(DefaultTableModel modelo){
         tblEstudiantes.setModel(modelo); 
     }
     
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -32,14 +29,9 @@ public class FrmListEst extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-<<<<<<< HEAD
-        jLabel1.setText("Lista");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 390, 20));
-=======
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Lista");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 510, 20));
->>>>>>> 6caedfb (Respaldando archivos locales antes del pull)
 
         tblEstudiantes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -54,22 +46,12 @@ public class FrmListEst extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblEstudiantes);
 
-<<<<<<< HEAD
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
-=======
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 530, -1));
->>>>>>> 6caedfb (Respaldando archivos locales antes del pull)
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -80,9 +62,7 @@ public class FrmListEst extends javax.swing.JFrame {
         } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new FrmListEst().setVisible(true));
     }
 
