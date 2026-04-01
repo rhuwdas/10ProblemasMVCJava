@@ -105,8 +105,8 @@ public class FrmAgg extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void vaciar() {
-        this.txtTel.setText("");
-        this.txtNombre.setText("");
         this.txtEmail.setText("");
+        this.txtNombre.setText("");
+        this.txtTel.setText("");
     }
 }
