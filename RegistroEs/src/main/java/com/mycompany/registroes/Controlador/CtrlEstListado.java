@@ -20,11 +20,14 @@ public class CtrlEstListado {
         
         try{
             this.objArch = new ArchivoTexto();
+
             if (!this.objArch.abrirArchivoTexto('r',"estudiantes.txt")) {
                 System.out.println("El archivo no existe o no se pudo abrir");
                 return false;
             }
             this.objArch.abrirArchivoTexto('r',"estudiantes.txt");                
+
+          
             Object[][] datos = this.objArch.obtenerMatrizLineas(n);        
             this.objArch.cerrarArchivo('r');
              DefaultTableModel modelo = new DefaultTableModel(datos, this.frmLis.columnas);
@@ -40,5 +43,5 @@ public class CtrlEstListado {
     
     
     
-    
+    z
 }

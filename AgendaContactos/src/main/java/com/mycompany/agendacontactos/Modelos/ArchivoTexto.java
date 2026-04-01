@@ -1,6 +1,5 @@
 //Representa al CRUD de un archivo de texto
-package com.mycompany.registroes.Modelo;
-import com.mycompany.registroes.Vista.FrmListEst;
+package com.mycompany.agendacontactos.Modelos;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

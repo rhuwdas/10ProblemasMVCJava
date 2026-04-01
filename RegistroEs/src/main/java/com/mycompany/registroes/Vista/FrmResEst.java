@@ -4,21 +4,23 @@
  */
 package com.mycompany.registroes.Vista;
 
-import com.mycompany.registroes.Controlador.CtrlEst;
+import com.mycompany.registroes.Controlador.CtrlEstAgg;
 
 /**
  *
  * @author chimil
  */
 public class FrmResEst extends javax.swing.JFrame {
-    private CtrlEst ctrlEst;
+
+    private CtrlEstAgg ctrlEst;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmResEst.class.getName());
     /**
      * Creates new form FrmResEst
      */
     public FrmResEst() {
         initComponents();
-        ctrlEst = new CtrlEst(this);
+
+        ctrlEst = new CtrlEstAgg(this);
     }
     public void vaciasCajas(){
         this.txtNControl.setText("");

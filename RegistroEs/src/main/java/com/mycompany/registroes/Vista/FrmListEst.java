@@ -1,7 +1,7 @@
 
 package com.mycompany.registroes.Vista;
 
-import com.mycompany.registroes.Controlador.CtrlEst;
+
 import com.mycompany.registroes.Controlador.CtrlEstListado;
 import javax.swing.table.DefaultTableModel;
 
@@ -32,8 +32,14 @@ public class FrmListEst extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+<<<<<<< HEAD
         jLabel1.setText("Lista");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 390, 20));
+=======
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Lista");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 510, 20));
+>>>>>>> 6caedfb (Respaldando archivos locales antes del pull)
 
         tblEstudiantes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -48,7 +54,11 @@ public class FrmListEst extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblEstudiantes);
 
+<<<<<<< HEAD
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+=======
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 530, -1));
+>>>>>>> 6caedfb (Respaldando archivos locales antes del pull)
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
