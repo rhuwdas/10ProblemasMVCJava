@@ -13,6 +13,7 @@ public class FrmListEst extends javax.swing.JFrame {
         initComponents();
         this.contrlEs = new CtrlEstListado(this);
         contrlEs.listarEst(columnas.length);
+        vaciar();
     }
 
     public void modelTbl(DefaultTableModel modelo){
@@ -71,4 +72,8 @@ public class FrmListEst extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable tblEstudiantes;
     // End of variables declaration//GEN-END:variables
+
+    private void vaciar() {
+        
+    }
 }
