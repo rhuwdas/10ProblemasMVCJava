@@ -66,6 +66,7 @@ public class FrmAgg extends javax.swing.JFrame {
 
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
         ctrlAgg.IngresarDatos(this.txtNombre.getText(), this.txtTel.getText(),(this.txtEmail.getText()));
+        vaciar();
     }//GEN-LAST:event_lblGuardarMouseClicked
 
     private void lblListarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblListarMouseClicked
@@ -102,4 +103,10 @@ public class FrmAgg extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtTel;
     // End of variables declaration//GEN-END:variables
+
+    private void vaciar() {
+        this.txtEmail.setText("");
+        this.txtNombre.setText("");
+        this.txtTel.setText("");
+    }
 }
