@@ -1,4 +1,12 @@
-
+/*
+    6. Sistema de calificaciones
+    Objetivo: Registrar calificaciones de alumnos.
+    Datos:
+    • Nombre
+    • Materia
+    • Calificación
+    Archivo: calificaciones.txt
+*/
 package com.mycompany.siscal.Modelo;
 
 
