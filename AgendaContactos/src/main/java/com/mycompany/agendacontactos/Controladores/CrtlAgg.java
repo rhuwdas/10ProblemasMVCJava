@@ -4,12 +4,12 @@ import com.mycompany.agendacontactos.Modelos.ArchivoTexto;
 import com.mycompany.agendacontactos.Modelos.Contactos;
 import com.mycompany.agendacontactos.Vista.FrmAgg;
 
-public class CrtlAggC {
+public class CrtlAgg {
     Contactos cont;
     FrmAgg frmAgg;
     ArchivoTexto objArch;
 
-    public CrtlAggC(FrmAgg frmAggg) {
+    public CrtlAgg(FrmAgg frmAggg) {
         this.frmAgg = frmAggg;
     }
 

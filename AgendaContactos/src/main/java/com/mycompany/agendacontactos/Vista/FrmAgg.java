@@ -1,14 +1,14 @@
 package com.mycompany.agendacontactos.Vista;
 
-import com.mycompany.agendacontactos.Controladores.CrtlAggC;
+import com.mycompany.agendacontactos.Controladores.CrtlAgg;
 
 public class FrmAgg extends javax.swing.JFrame {
-    CrtlAggC ctrlAgg;
+    CrtlAgg ctrlAgg;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmAgg.class.getName());
     
     public FrmAgg() {
         initComponents();
-        ctrlAgg = new CrtlAggC(this);
+        ctrlAgg = new CrtlAgg(this);
     }
 
     
