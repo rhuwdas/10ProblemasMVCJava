@@ -10,6 +10,7 @@ public class FrmAgg extends javax.swing.JFrame {
     public FrmAgg() {
         initComponents();
         ctrlAgg = new CrtlAgg(this);
+    //Ejercico 6 
     }
 
     
@@ -49,7 +50,7 @@ public class FrmAgg extends javax.swing.JFrame {
                 lblGuardarMouseClicked(evt);
             }
         });
-        getContentPane().add(lblGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, -1, 20));
+        getContentPane().add(lblGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, 20));
 
         lblListar.setText("LIstar");
         lblListar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -57,7 +58,7 @@ public class FrmAgg extends javax.swing.JFrame {
                 lblListarMouseClicked(evt);
             }
         });
-        getContentPane().add(lblListar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, -1));
+        getContentPane().add(lblListar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, -1, -1));
         getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, 120, 30));
         getContentPane().add(txtCal, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 120, 30));
         getContentPane().add(txtMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 120, 30));
