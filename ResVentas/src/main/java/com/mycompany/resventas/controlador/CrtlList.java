@@ -29,8 +29,5 @@ public class CrtlList {
             e.printStackTrace();
             return false;
         }
-        
     }
-    
-    
 }
